@@ -31,13 +31,13 @@ namespace WindowsFormsApp3
         }
        public struct Shop
         {
-            string ShopName;
-            string Adress;
-            int Article;
-            string TovarName;
-            int Count;
-            int PricePerEach;
-            int Price4All;
+           public string ShopName;
+           public string Adress;
+           public int Article;
+           public string TovarName;
+           public int Count;
+           public int PricePerEach;
+           public int Price4All;
             public Shop(string _ShopName, string _Adress, int _Article, string _TovarName, int _Count, int _PricePerEach)
             {
                 ShopName = _ShopName;
