@@ -61,13 +61,32 @@ namespace MainProgramm
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("База создана", "Message");
+            if (!WindowsFormsApp3.TextBoxesCheck.isCreated)
+            {
+                MessageBox.Show("База создана", "Message");
+                WindowsFormsApp3.TextBoxesCheck.isCreated = false;
+            }
+            else
+            {
+                MessageBox.Show("База была создана до этого", "Message");
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             WindowsFormsApp3.FindString form = new WindowsFormsApp3.FindString();
             form.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            WindowsFormsApp3.RedactSomething form = new WindowsFormsApp3.RedactSomething();
+            form.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

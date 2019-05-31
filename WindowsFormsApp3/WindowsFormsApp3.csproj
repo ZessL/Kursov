@@ -69,6 +69,12 @@
     <Compile Include="FindString.Designer.cs">
       <DependentUpon>FindString.cs</DependentUpon>
     </Compile>
+    <Compile Include="RedactSomething.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RedactSomething.Designer.cs">
+      <DependentUpon>RedactSomething.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShowStringFBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RedactSomething.resx">
+      <DependentUpon>RedactSomething.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShowStringFBase.resx">
       <DependentUpon>ShowStringFBase.cs</DependentUpon>
     </EmbeddedResource>

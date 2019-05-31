@@ -40,7 +40,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(113, 328);
+            this.button4.Location = new System.Drawing.Point(118, 302);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 26);
             this.button4.TabIndex = 0;
@@ -52,15 +52,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 328);
+            this.label1.Location = new System.Drawing.Point(21, 289);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 26);
+            this.label1.Size = new System.Drawing.Size(59, 39);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Создание таблицы\r\nданных";
+            this.label1.Text = "Создание \r\nтаблицы\r\nданных";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(113, 291);
+            this.button5.Location = new System.Drawing.Point(118, 237);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 26);
             this.button5.TabIndex = 2;
@@ -72,16 +73,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 291);
+            this.label2.Location = new System.Drawing.Point(21, 224);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 26);
+            this.label2.Size = new System.Drawing.Size(60, 39);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Добавить запись\r\nв таблицу";
+            this.label2.Text = "Добавить \r\nзапись\r\nв таблицу";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 242);
+            this.label3.Location = new System.Drawing.Point(21, 159);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 39);
             this.label3.TabIndex = 4;
@@ -89,7 +90,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(113, 242);
+            this.button6.Location = new System.Drawing.Point(118, 159);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 39);
             this.button6.TabIndex = 5;
@@ -100,18 +101,19 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(113, 178);
+            this.button7.Location = new System.Drawing.Point(118, 65);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 52);
             this.button7.TabIndex = 6;
             this.button7.Text = "click";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             this.button7.MouseHover += new System.EventHandler(this.button7_MouseHover);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 178);
+            this.label4.Location = new System.Drawing.Point(21, 65);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 52);
             this.label4.TabIndex = 7;
@@ -119,7 +121,7 @@
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(699, 363);
+            this.ClientSize = new System.Drawing.Size(224, 361);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);

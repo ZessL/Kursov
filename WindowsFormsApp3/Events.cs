@@ -9,6 +9,8 @@ namespace WindowsFormsApp3
 {
     public class TextBoxesCheck
     {
+        public static Structs.Shop[] shops;
+        public static bool isCreated = false;
         public static Structs.Shop foundString;
         public static List<WindowsFormsApp3.Structs.Shop> listShop = new List<Structs.Shop>();
         public TextBoxesCheck()
@@ -16,11 +18,6 @@ namespace WindowsFormsApp3
             
         }
 
-        /*public void CheckBoxes()
-        {
-            MainProgramm.Form2 form = new MainProgramm.Form2();
-            if(textBox1.)
-        }*/
 
 
         public string[] CheckTextBoxes(string textbox3, string textbox5, string textbox6)
@@ -52,11 +49,11 @@ namespace WindowsFormsApp3
                 shops[i] = (Structs.Shop)listShop[i];
                 if (shops[i].Article == article)
                 {
-                    foundString = shops[i];
+                   return shops[i];
                 }
                 
             }
-            return foundString;
+            return shops[0];
         }
 
 
@@ -64,38 +61,62 @@ namespace WindowsFormsApp3
 
         public void RedactShopname(int _Article, string _ShopName)
         {
-            Structs.Shop shop = ShowStringFromBase(_Article);
-            shop.ShopName = _ShopName;
+            if (_ShopName != "" && _ShopName != null)
+            {
+                Structs.Shop shop = ShowStringFromBase(_Article);
+                shop.ShopName = _ShopName;
+            }
+            else
+            {
+
+            }
         }
 
         public void RedactAdress(int _Article, string _Adress)
         {
-            Structs.Shop shop = ShowStringFromBase(_Article);
-            shop.Adress = _Adress;
+            if (_Adress != "" && _Adress != null)
+            {
+                Structs.Shop shop = ShowStringFromBase(_Article);
+                shop.Adress = _Adress;
+            }
         }
 
         public void RedactArticle(int _Article)
         {
-            Structs.Shop shop = ShowStringFromBase(_Article);
-            shop.Article = _Article;
+            if (_Article != 0)
+            {
+                Structs.Shop shop = ShowStringFromBase(_Article);
+                shop.Article = _Article;
+            }
         }
 
         public void RedactTovarname(int _Article, string _TovarName)
         {
-            Structs.Shop shop = ShowStringFromBase(_Article);
-            shop.TovarName = _TovarName;
+            if (_TovarName != "" && _TovarName != null)
+            {
+                Structs.Shop shop = ShowStringFromBase(_Article);
+                shop.TovarName = _TovarName;
+            }
         }
 
-        public void RedactCount(int _Article, int _Count)
+        public void RedactCount(int _Article, string _Count)
         {
-            Structs.Shop shop = ShowStringFromBase(_Article);
-            shop.Count = _Count;
+            if (_Count != null && _Count != "")
+            {
+                int count = System.Convert.ToInt32(_Count);
+                Structs.Shop shop = ShowStringFromBase(_Article);
+                shop.Count = count;
+            }
         }
 
-        public void RedactPricePerEach(int _Article, int _Price)
+        public void RedactPricePerEach(int _Article, string _Price)
         {
-            Structs.Shop shop = ShowStringFromBase(_Article);
-            shop.PricePerEach = _Price;
+            if (_Price != null && _Price != "")
+            {
+                 int price = System.Convert.ToInt32(_Price);
+                Structs.Shop shop = ShowStringFromBase(_Article);
+                shop.PricePerEach = price;
+            }
         }
     }
 }
