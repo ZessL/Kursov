@@ -20,7 +20,7 @@ namespace WindowsFormsApp3
         private void button1_Click(object sender, EventArgs e)
         {
             TextBoxesCheck show = new TextBoxesCheck();
-            Structs.Shop string2Show = show.ShowStringFromBase(textBox1.Text);
+            Structs.Shop string2Show = show.ShowStringFromBase(System.Convert.ToInt32(textBox1.Text));
             ShowStringFBase showStringForm = new ShowStringFBase();
             showStringForm.ShowString(string2Show);
         }

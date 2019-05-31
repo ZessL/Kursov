@@ -178,7 +178,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ShowStringFBase";
             this.Text = "ShowStringFBase";
-            this.Load += new System.EventHandler(this.ShowStringFBase_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

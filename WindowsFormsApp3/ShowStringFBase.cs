@@ -21,7 +21,6 @@ namespace WindowsFormsApp3
         public void ShowString(Structs.Shop shop)
         {
             ShowStringFBase form = new ShowStringFBase();
-            form.ShowDialog();
             form.textBox1.Text = shop.ShopName;
             form.textBox2.Text = shop.Adress;
             form.textBox3.Text = shop.Article.ToString();
@@ -29,14 +28,8 @@ namespace WindowsFormsApp3
             form.textBox5.Text = shop.Count.ToString();
             form.textBox6.Text = shop.PricePerEach.ToString();
             form.textBox7.Text = shop.Price4All.ToString();
+            form.ShowDialog();
         }
 
-        private void ShowStringFBase_Load(object sender, EventArgs e)
-        {
-            TextBoxesCheck show = new TextBoxesCheck();
-            Structs.Shop string2Show = show.ShowStringFromBase(textBox1.Text);
-            ShowStringFBase showStringForm = new ShowStringFBase();
-            showStringForm.ShowString(string2Show);
-        }
     }
 }

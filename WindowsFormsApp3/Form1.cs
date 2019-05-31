@@ -16,7 +16,6 @@ namespace MainProgramm
         public Form1()
         {
             InitializeComponent();
-            List<WindowsFormsApp3.Structs.Shop> listShop = new List<WindowsFormsApp3.Structs.Shop>();
              
         }
 
